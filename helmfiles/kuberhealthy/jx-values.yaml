@@ -21,6 +21,8 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    environmentGitOwner: jstrachan
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -34,6 +36,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jstrachan
   repository: bucketrepo
   secretStorage: local
   vault: {}
